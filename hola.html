@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Esta declaración define que el documento es de tipo HTML5 -->
+<html lang="en">
+<!-- La etiqueta <html> comienza el documento HTML. El atributo 'lang="en"' especifica que el idioma del documento es inglés -->
+
+<head>
+    <!-- La sección <head> contiene metadatos del documento que no son visibles en la página -->
+    <meta charset="UTF-8">
+    <!-- Esta etiqueta meta especifica la codificación de caracteres para el documento, UTF-8, que incluye la mayoría de los caracteres de todos los idiomas escritos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esta etiqueta meta controla la ventana gráfica del navegador para hacer que el diseño sea responsivo en dispositivos móviles -->
+    <title>Document</title>
+    <!-- El título del documento, que aparece en la pestaña del navegador -->
+</head>
+
+<body>
+    <!-- La etiqueta <body> contiene todo el contenido visible de la página, como texto, imágenes, botones, etc. -->
+    <h2 id="demo2">Hola mundo</h2>
+    <!-- Un encabezado de nivel 2 que muestra el texto "Hola mundo". El atributo 'id' ayuda a identificar de manera única este elemento en el documento -->
+    <button onclick="document.getElementById('demo').innerHTML=Date()">
+        Ver Horario
+    </button>
+    <!-- Un botón que, al hacer clic, ejecuta código JavaScript para cambiar el contenido del elemento con id='demo' al horario actual. La función Date() de
+         JavaScript obtiene la fecha y hora actuales -->
+    
+    <p id="demo">No hay horario</p>
+    <!-- Un párrafo con el id 'demo'. Inicialmente contiene texto', que será reemplazado cuando se haga clic en el botón "Ver Horario" -->
+    <p>hola a todos</p>
+    <!-- Un párrafo que muestra el texto "hola a todos" -->
+    <button onclick="document.getElementById('demo2').innerHTML='hola de nuevo'">
+        Random
+    </button>
+    <!-- Otro botón que, al hacer clic, cambia el contenido del elemento con id='demo2' (el encabezado <h2>) a 'hola de nuevo' -->
+</body>
+<!-- Esta etiqueta cierra el <body>, que es donde termina el contenido visible de la página. -->
+</html>
+<!-- Esta etiqueta cierra el documento HTML. -->
